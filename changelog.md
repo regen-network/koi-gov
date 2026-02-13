@@ -1,66 +1,54 @@
 # KOI Naming Convention Changelog
 
-This changelog tracks all officially ratified changes and updates to the KOI (Knowledge Organization Infrastructure) naming conventions stewarded by Regen Network Development, PBC.
+All notable changes to the KOI naming conventions are documented here.
+
+Format follows [Keep a Changelog](https://keepachangelog.com/).
 
 ---
 
-## 🗂️ Version History
+## [1.1.0] - 2026-02-12
 
-### [v1.0.0] - 2025-04-07
+### Added
 
-#### Initial Release
-- Established initial semantic naming convention:
-  ```
-  [relevance].[type].[subject].vX.Y.Z
-  ```
+- 7 new object types codified from active Notion KOI Repo usage:
+  - **strategy** — forward-looking strategic frameworks and business models
+  - **docs** — reference documentation, specifications, and guides
+  - **feedback** — structured feedback on proposals, products, or processes
+  - **research** — investigative or exploratory research output
+  - **press** — external-facing communications and media materials
+  - **prompt** — AI prompt templates, agent configurations, instruction sets
+  - **transcript** — meeting or conversation transcripts, typically AI-generated
+- "Choosing Between Types" guidance for disambiguating similar object types
+- Status tracking section documenting the draft → in review → ready to publish → published lifecycle
+- Access levels section documenting Public / Knowledge Commons / Internal tiers
+- AI Readiness section documenting the Ready for AI flag for agent ingestion
+- Versioning guidelines with concrete examples and rules for when to bump each component
 
-#### Relevance Tiers
-- **`core.`** - Canonical, foundational documents.
-- **`relevant.`** - Influential, actively cited documentation.
-- **`background.`** - Contextual, historical, supportive material.
+### Deprecated
 
-#### Object Types
-- `memo` - Strategic or operational documents.
-- `analysis` - Detailed quantitative or qualitative breakdowns.
-- `notes` - Informal ideas and documentation.
-- `readme` - Canonical directory and pattern documentation.
+- **Final Analysis** object type — use `analysis` with appropriate Status field instead
 
-#### Semantic Versioning Guidelines
-- `vX.0.0`: Major conceptual shifts or introductions.
-- `vX.Y.0`: Minor, meaningful expansions or adjustments.
-- `vX.Y.Z`: Editorial or minor clarifications.
+### Changed
 
-#### Governance Process
-- Defined the process for proposing, piloting, and ratifying naming convention changes via GitHub PRs and weekly governance calls.
+- Manifesto version bumped from v1.0.0 to v1.1.0
+- Expanded examples in naming structure section to include new types
+- Object Types section reorganized into Original (v1.0.0), Expanded (v1.1.0), and Deprecated subsections
 
----
+### Notes
 
-## 🔜 Upcoming Proposed Changes
-
-The following changes have been proposed and are pending further discussion, piloting, and formal approval:
-
-### [v1.1.0] *(proposed)*
-- Add new object types:
-  - `decision` – Official records of organizational decisions.
-  - `experimental` – Early-stage or temporary exploratory content.
-- Add relevance tier:
-  - `exploratory` – Clearly distinguishes ideation from `background` and `relevant` tiers.
+- These types were already in active use in the Notion KOI Repo database but had not been formally codified in the manifesto. This update brings the canonical specification into alignment with actual practice.
+- No breaking changes. All existing v1.0.0 names remain valid.
 
 ---
 
-## ✍️ How to Update this Changelog
+## [1.0.0] - 2025-04-14
 
-- Update this file after every officially ratified naming convention change.
-- Clearly list new versions at the top with detailed breakdowns of changes.
-- Maintain clear semantic versioning discipline in alignment with KOI guidelines.
+### Added
 
----
-
-## 🤝 Contribution & Governance
-
-To propose changes or adjustments:
-- Submit a Pull Request (PR) following instructions in [`CONTRIBUTING.md`](./CONTRIBUTING.md).
-- Changes are reviewed and ratified during weekly governance calls.
-
-Thank you for contributing to the clarity and coherence of KOI Governance!
-
+- Initial KOI naming convention manifesto
+- Core naming structure: `[relevance].[type].[subject].vX.Y.Z`
+- Three relevance levels: `core`, `relevant`, `background`
+- Five object types: `memo`, `analysis`, `notes`, `decision`, `readme`
+- Semantic versioning scheme for KOI objects
+- Governance process for proposing and ratifying changes
+- CONTRIBUTING.md with contribution guidelines

@@ -32,11 +32,10 @@ This document defines the semantic naming convention used across the KOI (Knowle
 
 ---
 
-## **Purpose**
+## **Audience**
 
-This document defines the semantic naming convention used across the KOI (Knowledge Organization Infrastructure) system stewarded by Regen Network Development, PBC. It articulates the reasons for using this naming convention, the structure itself, the upgrade process, and principles to guide when and how to expand the namespace. The intention is to foster collective coherence, support semantically legible digital institutions, and align naming practices with Regen’s deep commitments to regeneration, trust, and clarity.
+This guide is for anyone contributing knowledge to Regen Network — whether you're a scientist, organizer, developer, or policy thinker. You don’t need to be technical to use this guide. You just need to care about naming things clearly so others can find and reuse them.
 
----
 
 ## **Current Structure**
 
@@ -79,6 +78,26 @@ The current KOI naming system follows this schema:
   * `Z` \= editorial or structural update only
 
 ---
+## 🧠 Alternate Format: Semantic Properties
+
+In addition to embedding KOI metadata into a single string (e.g., `core.memo.q2-sprint-strategy.v1.0.0`), KOI objects can use **distributed properties** in tools that support it (like Notion, YAML frontmatter, or JSON).
+
+### Example in Notion:
+
+| Property    | Value                                                  |
+|-------------|--------------------------------------------------------|
+| KOI Name    | `core.objective.q2-commons-activation.v2025-Q2.v1.0.0` |
+| Type        | `core.objective`                                       |
+| Relevance   | `core`                                                 |
+| Version     | `v2025-Q2.v1.0.0`                                       |
+| Status      | `active`                                               |
+
+**Benefits:**
+- Machine-readability for AI agents and future KOI indexers
+- Human usability via clear titles
+- Structured search, sorting, and linking across platforms
+
+➡ See: [`docs/semantic-naming-properties.md`](./docs/semantic-naming-properties.md)
 
 ## **Rationale: Why This Naming Convention Exists**
 
@@ -150,25 +169,13 @@ You **may want to add a new prefix or type** if:
 
 * You want to create a `decision log`, `experimental module`, or `archived work` and it doesn’t clearly fit `core`, `relevant`, or `background`
 
-### **Recent Example: `exploratory.` (Proposed)**
+## 🔍 Examples for Non-Coders
 
-In April 2025, the team considered introducing:
+| Human-Friendly Title             | KOI Name                                               |
+|----------------------------------|--------------------------------------------------------|
+| Earth Stewardship Q2 Plan        | `core.plan.earth-stewardship.v2025-Q2.v1.0.0`          |
+| Biodiversity Credit Metrics (Draft) | `exploratory.notes.biodiversity-metrics.v0.2.1`     |
 
-* `exploratory.` for early-stage ideation that is neither background nor relevant yet
-
-* `archived.` for deprecated docs
-
-* `decision.` to snapshot cross-team agreements
-
-This was proposed in:
-
-```
-meta.reflection.koi-schema-expansion.v0.1.0
-```
-
-…and piloted informally in DAU and Commons naming. The result was increased semantic clarity for pre-synthesis docs.
-
----
 
 ## **Closing Reflection**
 
@@ -186,17 +193,8 @@ To name is to tend the garden of meaning. We name not just to label, but to **cr
 
 ## **Draft KOI Naming Convention Changelog**
 
-This section tracks approved changes to the KOI naming schema over time.
-
-| Version | Date | Change Summary | Author(s) |
-| ----- | ----- | ----- | ----- |
-| 1.0.0 | 2025-04-07 | Initial release with core, relevant, background relevance tiers \+ vX.Y.Z system | RND PBC Retreat Team |
-| 1.1.0 | *TBD* | (Proposed) Add `decision.`, `archived.`, `experimental.` prefixes | *Pending approval* |
-| 1.2.0 | *TBD* | (Optional) Refactor or clarify `readme.` usage and folder-scoped naming | *Pending* |
-
-To propose changes:
-
-* Create a new versioned document (e.g. `meta.reflection.koi-schema-expansion.vX.Y.Z`)  
-* Pilot and review  
-* Record approved changes here
+| Version | Date       | Change Summary                                                      | Author(s)           |
+|---------|------------|----------------------------------------------------------------------|---------------------|
+| 1.0.0   | 2025-04-07 | Initial release with core, relevant, background relevance tiers + vX.Y.Z system | RND PBC Retreat Team |
+| 1.1.0   | 2025-04-16 | Added property-based format guidance (Notion, GDocs, GitHub)         | Regen Coordination  |
 
