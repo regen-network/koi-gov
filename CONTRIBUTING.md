@@ -3,7 +3,8 @@
 Thank you for your interest in contributing to the **Knowledge Organization Infrastructure (KOI)**! This document outlines how you can meaningfully contribute to KOI governance, naming conventions, and semantic standards.
 
 ---
-👐 Who Can Contribute?
+
+## 👐 Who Can Contribute?
 
 Anyone! You don’t need to be a developer or GitHub expert. If you’re creating meaningful documents—like a plan, decision, proposal, or dataset—you can contribute to KOI.
 

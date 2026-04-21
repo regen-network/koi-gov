@@ -3,7 +3,7 @@
 
 **Repository Status:** Active Development
 **Lead Maintainer:** Gregory Landua
-**Last Updated:** February 12, 2026
+**Last Updated:** 2026-04-21 (v1.2.0)
 
 ---
 
@@ -19,9 +19,11 @@ KOI is our collective infrastructure for creating coherent, transparent, and act
 
 | Document | Purpose |
 |----------|---------|
-| [`KOI.regen-naming-convention-manifesto.v1.1.0.md`](./KOI.regen-naming-convention-manifesto.v1.1.0.md) | Defines the KOI semantic naming schema, versioning practices, object types, and governance process. |
+| [`KOI.regen-naming-convention-manifesto.v1.2.0.md`](./KOI.regen-naming-convention-manifesto.v1.2.0.md) | **Current manifesto.** Defines the KOI semantic naming schema, versioning practices, object types, ledger anchoring discipline, and governance process. |
+| [`examples/`](./examples/) | Worked examples of each object type (v1.2.0 pilot set + more). |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Explains how to propose, pilot, and ratify changes to the KOI naming schema. |
 | [`changelog.md`](./changelog.md) | Tracks all approved changes and updates to the naming conventions. |
+| [`KOI.regen-naming-convention-manifesto.v1.1.0.md`](./KOI.regen-naming-convention-manifesto.v1.1.0.md) | Previous version (archived). |
 
 ---
 
@@ -31,10 +33,19 @@ KOI is our collective infrastructure for creating coherent, transparent, and act
 koi-gov/
 │
 ├── README.md                                              # You are here
-├── KOI.regen-naming-convention-manifesto.v1.1.0.md        # Current manifesto
-├── KOI.regen-naming-convention-manifesto.v1.0.0.md        # Previous version (archived)
+├── KOI.regen-naming-convention-manifesto.v1.2.0.md        # Current manifesto
+├── KOI.regen-naming-convention-manifesto.v1.1.0.md        # Previous version (archived)
+├── KOI.regen-naming-convention-manifesto.v1.0.0.md        # Initial version (archived)
 ├── CONTRIBUTING.md                                        # Contribution guidelines
 ├── changelog.md                                           # Record of changes
+├── examples/                                              # Worked examples of each type
+│   ├── README.md
+│   ├── core.spec.regen-os-learning-subroutines.v0.1.0.example.md
+│   ├── core.plan.regen-os-phase-delivery.v0.1.0.example.md
+│   ├── core.overview.regen-os-current-state.v0.1.0.example.md
+│   └── core.registry.regen-os-artifact-registry.v0.1.0.example.md
+├── docs/
+│   └── semantic-naming-properties.md                      # Tool-by-tool implementation
 └── LICENSE                                                # MIT License
 ```
 
@@ -83,6 +94,10 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed instructions.
 | `press` | External-facing communications and media materials. |
 | `prompt` | AI prompt templates, agent configurations, or instruction sets. |
 | `transcript` | Meeting or conversation transcripts, typically AI-generated. |
+| `spec` *(v1.2.0)* | Technical specification, agentic loop spec, or agent instruction template. |
+| `plan` *(v1.2.0)* | Phased execution plan with milestones, gates, and resource requirements. |
+| `overview` *(v1.2.0)* | Canonical explainer of a system or domain at a point in time. |
+| `registry` *(v1.2.0)* | Meta-document that indexes or directories other knowledge objects. |
 
 ### Semantic Versioning
 

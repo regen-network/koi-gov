@@ -20,12 +20,15 @@ Use a Notion Database to represent KOI Objects with structured properties:
 
 | Property    | Value                                                  |
 |-------------|--------------------------------------------------------|
-| Title       | Q2 Sprint Strategy – Regen Commons                     |
-| KOI Name    | core.objective.rnd-foundation-sprint.v2025-Q2.v0.1.4  |
-| Type        | core.objective                                         |
+| Title       | RegenOS Overview — Unified Operating System for RND PBC |
+| KOI Name    | core.strategy.regen-os-overview.v0.1.0                 |
 | Relevance   | core                                                   |
-| Version     | v2025-Q2.v0.1.4                                        |
-| Status      | active                                                 |
+| Type        | strategy                                               |
+| Subject     | regen-os-overview                                      |
+| Version     | v0.1.0                                                 |
+| Status      | draft                                                  |
+| Access      | Internal                                               |
+| Ready for AI| yes                                                    |
 
 - **Search Tips**: Notion prioritizes title search. Use filters to query metadata.
 - **Linking**: Canonical versions can link to Google Docs, GitHub, or exported JSON.
@@ -38,12 +41,14 @@ Use a Notion Database to represent KOI Objects with structured properties:
 
 Example metadata block:
 ```
-Title: Q2 Sprint Strategy – Regen Commons
-KOI Name: core.objective.rnd-foundation-sprint.v2025-Q2.v0.1.4
-Version: v2025-Q2.v0.1.4
-Type: core.objective
+Title: RegenOS Overview — Unified Operating System for RND PBC
+KOI Name: core.strategy.regen-os-overview.v0.1.0
 Relevance: core
-Status: active
+Type: strategy
+Subject: regen-os-overview
+Version: v0.1.0
+Status: draft
+Access: Internal
 ```
 
 ---
@@ -55,11 +60,14 @@ Status: active
 
 ```yaml
 ---
-koi_name: core.objective.rnd-foundation-sprint.v2025-Q2.v0.1.4
-version: v2025-Q2.v0.1.4
-type: core.objective
+koi_name: core.strategy.regen-os-overview.v0.1.0
 relevance: core
-status: active
+type: strategy
+subject: regen-os-overview
+version: v0.1.0
+status: draft
+access: Internal
+ready_for_ai: true
 ---
 ```
 
