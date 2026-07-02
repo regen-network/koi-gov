@@ -6,6 +6,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/).
 
 ---
 
+## [1.3.0] - Proposed (pending governance-call ratification)
+
+> Stacks on the pending v1.2.0 PR (`claude/v1.2.0-types-anchoring-examples`), which is not yet merged to `main`. Ratify v1.2.0 first, or ratify the two together. No breaking changes; all existing KOI names and Access values remain valid.
+
+### Added
+
+- **Five-tier Access scheme** — reconciles the canonical Access levels with the RegenOS / vault / federation access model. `Public / Knowledge Commons / Internal` are unchanged; **`Partner`** (close-collaborator tier) and **`Personal`** (sovereignty floor, never federated/published) are added. Access declared orthogonal to Relevance and to Publication, with a mapping table to the workspace `access:` values.
+- **RID as a first-class metadata property** — `orn:regen.<entity-class>:<context>/<reference>`; minted on creation, stable across renames and version bumps, emitted with every published record, and the join key between KOI Name and ledger anchor. New §Resource Identifier (RID).
+- **Publication property** — the per-surface publish decision (`Public Web / Open Index / Commons Trove / Partner Space`), each gated by a minimum Access tier, publish-by-decision-not-default, never set on `Personal`, logged per emit. Distinct from `Status` (editorial) and `Access` (sensitivity). New §Publication. This is the machine-checkable enforcement point for the Sensitivity and Reference-Accessibility gates.
+- **Canonical Vertical controlled vocabulary** ratified in `docs/vertical-canonical-v1.md` — 9 Title-Case values, 2 retirements (`PUBLIC SECTOR`, `General Tech Provider` → Actor Type on Organizations DB), and a historical alias map for backfill. Supersedes the legacy ALL-CAPS 8-option KOI list and the 10-option BizDev list. New §Controlled Vocabularies establishes `docs/` as vocabulary ground truth.
+- **Proposal doc** `meta.reflection.koi-publishing-spine-metadata.v0.1.0.md` with semantic-gap analysis, examples, tradeoffs, cross-surface rollout, and pilot plan.
+- `docs/semantic-naming-properties.md` property templates (Notion / Google Docs / GitHub) extended with `RID`, `Publication`, and five-tier `Access`.
+
+### Notes
+
+- Manifesto version bumped v1.2.0 → v1.3.0; `KOI.regen-naming-convention-manifesto.v1.2.0.md` preserved as historical record.
+- The surface-specific metadata-upgrade execution runbook (Notion field IDs, DDL, backfill scripts, sequencing) is maintained as an **Internal** KOI object, not in this public repo, per the pre-push sensitivity gate. This changelog governs the convention; the runbook governs execution.
+- Pilot evidence (≥2 weeks, ≥3 objects across the new tiers) to be recorded in the proposal doc before merge.
+
+---
+
 ## [1.2.0] - 2026-04-21
 
 ### Added
