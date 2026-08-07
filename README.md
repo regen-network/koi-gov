@@ -13,6 +13,17 @@ Welcome to the **KOI (Knowledge Organization Infrastructure) Governance Reposito
 
 KOI is our collective infrastructure for creating coherent, transparent, and actionable knowledge objects within Regen Network. By maintaining semantic clarity, we enable decentralized teams, AI agents, and community participants to collaborate meaningfully.
 
+### Scope — one of two adjacent schema domains
+
+Regen governs two interdependent schema sets:
+
+- **This repository** governs **non-registry operational and knowledge schemas** — RegenOS, Compass, work coordination, decisions, specs — plus the cross-cutting properties that apply org-wide: Relevance, Type, Vertical, Access tier, Publication decision, the `orn:regen.*` RID namespace, and ledger-anchoring discipline.
+- **[`regen-data-standards`](https://github.com/regen-network/regen-data-standards)** governs **registry-system schemas** — projects, credit classes, methodologies, claims, attestations, impacts, taxonomies — as LinkML sources published under `https://framework.regen.network/schema/`.
+
+*Does the schema describe an object the ecocredit registry issues, holds, or verifies?* If yes, it belongs to `regen-data-standards`. If it describes how Regen itself works, decides, or publishes, it belongs here.
+
+The boundary contract between them — including how cross-domain references travel — is **[`docs/schema-governance-boundary-v1.md`](./docs/schema-governance-boundary-v1.md)**.
+
 ---
 
 ## 📌 Key Documents
@@ -21,6 +32,7 @@ KOI is our collective infrastructure for creating coherent, transparent, and act
 |----------|---------|
 | [`KOI.regen-naming-convention-manifesto.v1.2.0.md`](./KOI.regen-naming-convention-manifesto.v1.2.0.md) | **Current manifesto.** Defines the KOI semantic naming schema, versioning practices, object types, ledger anchoring discipline, and governance process. |
 | [`examples/`](./examples/) | Worked examples of each object type (v1.2.0 pilot set + more). |
+| [`docs/schema-governance-boundary-v1.md`](./docs/schema-governance-boundary-v1.md) | **Boundary contract with [`regen-data-standards`](https://github.com/regen-network/regen-data-standards).** Which repo governs which schemas, how cross-domain references travel as RIDs, and the seam-change protocol. |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Explains how to propose, pilot, and ratify changes to the KOI naming schema. |
 | [`changelog.md`](./changelog.md) | Tracks all approved changes and updates to the naming conventions. |
 | [`KOI.regen-naming-convention-manifesto.v1.1.0.md`](./KOI.regen-naming-convention-manifesto.v1.1.0.md) | Previous version (archived). |
